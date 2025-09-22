@@ -1,0 +1,122 @@
+/* Container for the main content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* Profile picture styling */
+.profilePic {
+  border-radius: 50%;
+  border: 4px solid #4a90e2;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+}
+
+/* About Me section */
+.aboutme {
+  text-align: center;
+  max-width: 800px;
+}
+
+.aboutme h3 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.aboutme p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+  color: #333333;
+}
+
+/* Project Cards Section */
+.projectCards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.projectCards h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+/* Row for cards */
+.cardsRow {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* adjust LandingCard sizing for responsiveness */
+.cardsRow > * {
+  flex: 1 1 280px;
+  max-width: 300px;
+}
+
+/* Responsive Adjustments */
+
+/* Tablets / Medium screens */
+@media (max-width: 1024px) {
+  .profilePic {
+    width: 180px;
+    height: 180px;
+  }
+
+  .aboutme p {
+    font-size: 1rem;
+  }
+
+  .projectCards h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Mobile / Small screens */
+@media (max-width: 768px) {
+  .profilePic {
+    width: 150px;
+    height: 150px;
+  }
+
+  .aboutme p {
+    font-size: 0.95rem;
+  }
+
+  .cardsRow {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cardsRow > * {
+    width: 90%;
+    max-width: none;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .aboutme h3,
+  .projectCards h3 {
+    font-size: 1.3rem;
+  }
+
+  .aboutme p {
+    font-size: 0.9rem;
+  }
+}
