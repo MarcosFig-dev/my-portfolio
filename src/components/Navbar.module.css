@@ -3,7 +3,6 @@
   background-color: #1e2a38;
   padding: 1rem 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  position: sticky;
   top: 0;
   z-index: 100;
 }
@@ -11,7 +10,7 @@
 .navList {
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   gap: 2rem;
   margin: 0;
   padding: 0;

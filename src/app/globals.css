@@ -117,3 +117,9 @@ a:hover {
   background-color: var(--color-accent);
   color: var(--color-text-on-dark);
 }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
