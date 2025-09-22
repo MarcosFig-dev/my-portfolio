@@ -1,0 +1,19 @@
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.navList .navItem {
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navItem:hover {
+  color: white;
+  background-color: black;
+}
