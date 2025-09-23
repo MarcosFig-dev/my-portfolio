@@ -20,7 +20,7 @@ function NavBar() {
         </li>
         <li>
           <Link href="/projects" className={Styles.navItem}>
-            Projects
+            My Favourite Projects
           </Link>
         </li>
         <li>

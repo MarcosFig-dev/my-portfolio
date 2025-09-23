@@ -1,0 +1,115 @@
+/* ================================
+   Certificate Card Styles
+   ================================ */
+
+/* Main card container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 700px;
+  padding: 1.8rem;
+  margin-bottom: 3rem;
+  border-radius: 12px;
+  background-color: #f9f9f9; /* light card background */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Certificate title */
+.heading {
+  font-size: 2rem; /* make it prominent */
+  font-weight: 700;
+  color: #4a90e2; /* primary accent color */
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+/* Certificate image */
+.certImage {
+  width: 200px; /* smaller image */
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+/* Certificate description */
+.body-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333333;
+  margin-bottom: 1.5rem;
+}
+
+/* Toggle button */
+.button {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background-color: #4a90e2; /* primary color */
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-bottom: 1.5rem;
+}
+
+.button:hover {
+  background-color: #357ab8; /* darker on hover */
+  transform: translateY(-1px);
+}
+
+/* Projects container */
+.projectContainer {
+  display: flex;
+  flex-wrap: wrap; /* wrap projects */
+  gap: 1rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+/* Individual iframe project cards */
+.projectIframe {
+  flex: 1 1 calc(25% - 1rem); /* 4 per row on large screens */
+  min-width: 180px;
+  height: 250px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.projectIframe:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ================================
+   Responsive Adjustments
+   ================================ */
+@media (max-width: 1024px) {
+  .projectIframe {
+    flex: 1 1 calc(33.33% - 1rem); /* 3 per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .projectIframe {
+    flex: 1 1 calc(50% - 1rem); /* 2 per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .certImage {
+    width: 150px; /* smaller image for mobile */
+  }
+  .projectIframe {
+    flex: 1 1 100%; /* 1 per row */
+  }
+}

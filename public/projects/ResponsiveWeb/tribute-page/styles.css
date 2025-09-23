@@ -1,0 +1,48 @@
+* {
+  background-color: #d6d2d2;
+  color: black;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
+}
+
+img {
+  display: block;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+#title,
+#tribute-info,
+#img-caption {
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+#tribute-info {
+  font-size: 20px;
+}
+
+#tribute-link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+}
+
+a:visited {
+  color: purple;
+}

@@ -29,7 +29,7 @@ function LandingPage() {
           </p>
         </div>
         <div className={Styles.projectCards}>
-          <h3 className="heading">Quick Projects Overview</h3>
+          <h3 className="heading">Quick Overview</h3>
           <div className={Styles.cardsRow}>
             <LandingCard
               title="Personal Projects"
