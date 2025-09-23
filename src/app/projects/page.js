@@ -18,11 +18,12 @@ function Projects() {
               desc={
                 <>
                   <p>
-                    As part of a six-person development team, I’m helping design
-                    and build the "Career Task Teams" feature for an external
-                    company, supporting grassroots job seekers and students.
-                    Serving as Scrum Master, I facilitate Agile ceremonies,
-                    coordinate sprint planning, and ensure smooth collaboration.
+                    As part of a six-person development team, I amm helping
+                    design and build the Career Task Team feature for an
+                    external company, supporting grassroots job seekers and
+                    students. Serving as Scrum Master, I facilitate Agile
+                    ceremonies, coordinate sprint planning, and ensure smooth
+                    collaboration.
                   </p>
                   <p>
                     On the development side, I contribute to the full-stack
