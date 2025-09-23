@@ -5,8 +5,10 @@ function NavBar() {
   return (
     <nav className={Styles.nav}>
       <ul className={Styles.navList}>
-        <li className={Styles.navItem}>
-          <Link href="/">Home</Link>
+        <li>
+          <Link href="/" className={Styles.navItem}>
+            Home
+          </Link>
         </li>
         <li>
           <Link href="/about" className={Styles.navItem}>

@@ -35,12 +35,6 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Active page link  */
-.navItem.active {
-  background-color: #4a90e2;
-  color: #fff;
-}
-
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .navList {

@@ -1,7 +1,3 @@
-/* ================================
-   Certificate Card Styles
-   ================================ */
-
 /* Main card container */
 .container {
   display: flex;
@@ -11,7 +7,7 @@
   padding: 1.8rem;
   margin-bottom: 3rem;
   border-radius: 12px;
-  background-color: #f9f9f9; /* light card background */
+  background-color: #f9f9f9;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -23,16 +19,16 @@
 
 /* Certificate title */
 .heading {
-  font-size: 2rem; /* make it prominent */
+  font-size: 2rem;
   font-weight: 700;
-  color: #4a90e2; /* primary accent color */
+  color: #4a90e2;
   margin-bottom: 1rem;
   text-align: left;
 }
 
 /* Certificate image */
 .certImage {
-  width: 200px; /* smaller image */
+  width: 200px;
   height: auto;
   border-radius: 8px;
   object-fit: cover;
@@ -51,7 +47,7 @@
 .button {
   padding: 0.5rem 1rem;
   border-radius: 8px;
-  background-color: #4a90e2; /* primary color */
+  background-color: #4a90e2;
   color: #ffffff;
   font-weight: 600;
   cursor: pointer;
@@ -61,14 +57,14 @@
 }
 
 .button:hover {
-  background-color: #357ab8; /* darker on hover */
+  background-color: #357ab8;
   transform: translateY(-1px);
 }
 
 /* Projects container */
 .projectContainer {
   display: flex;
-  flex-wrap: wrap; /* wrap projects */
+  flex-wrap: wrap;
   gap: 1rem;
   width: 100%;
   margin-top: 1rem;
