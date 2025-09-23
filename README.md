@@ -52,5 +52,5 @@ You can explore my work through the portfolio site:
 ## Connect With Me
 
 - **GitHub:** [github.com/MarcosFig-dev](https://github.com/MarcosFig-dev)  
-- **LinkedIn:** [linkedin.com/in/marcos-figueiredo]([https://www.linkedin.com/in/marcos-figueiredo](https://www.linkedin.com/in/marcos-figueiredo-904328225/))  
+- **LinkedIn:** [linkedin.com/in/marcos-figueiredo](https://www.linkedin.com/in/marcos-figueiredo-904328225)
 - **Portfolio:** [marcosfig.dev](https://marcosfig.dev)  
