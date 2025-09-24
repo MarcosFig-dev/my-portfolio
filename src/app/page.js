@@ -53,7 +53,7 @@ function LandingPage() {
           <div className={Styles.introRight}>
             <Image
               src={profilePic}
-              alt="Marcos' Profile Picture"
+              alt="Marcos Profile Picture"
               className={Styles.profImg}
             />
           </div>
