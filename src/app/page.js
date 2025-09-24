@@ -23,7 +23,7 @@ function LandingPage() {
       <main className={Styles.main}>
         <div className={Styles.introCont}>
           <div className={Styles.introLeft}>
-            <h1 className={Styles.title}>Hello I'm Marcos Figueiredo</h1>
+            <h1 className={Styles.title}>Hello I&apos;m Marcos Figueiredo</h1>
             <p className={Styles.text}>An Aspiring Software Developer</p>
             <div className={Styles.introSocial}>
               <Link
