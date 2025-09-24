@@ -1,15 +1,15 @@
 import NavBar from "@/components/Navbar";
 
-function Contact() {
+function about() {
   return (
     <>
       <NavBar />
       <div>
-        <h1>Contact Me</h1>
+        <h1>About Me</h1>
         <h3>Coming Soon</h3>
       </div>
     </>
   );
 }
 
-export default Contact;
+export default about;
