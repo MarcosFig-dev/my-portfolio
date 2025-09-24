@@ -10,16 +10,16 @@ function NavBar() {
             Home
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link href="/about" className={Styles.navItem}>
-            About
+            More About Me
           </Link>
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
           <Link href="/contact" className={Styles.navItem}>
             Contact
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link href="/projects" className={Styles.navItem}>
             My Favourite Projects

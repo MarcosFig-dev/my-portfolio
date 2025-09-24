@@ -1,5 +1,5 @@
 import Navbar from "@/components/Navbar";
-import CertCard from "@/components/CertCard";
+import CertCard from "@/components/certComps/CertCard";
 import certImg from "@/assets/certImg.png";
 
 function Certificates() {
