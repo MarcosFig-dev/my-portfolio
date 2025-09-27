@@ -1,7 +1,7 @@
 import NavBar from "@/components/Navbar";
 import Styles from "./Projects.module.css";
 import ProjectCard from "@/components/projectComps/ProjectCard";
-import GoBearImg from "@/assets/GoBearImg.png";
+import GoBearImg from "@/assets/GoBearProject.png";
 import TTTImg from "@/assets/TicTacToe.png";
 
 function Projects() {
