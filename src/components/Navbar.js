@@ -1,38 +1,30 @@
+"use client";
 import Link from "next/link";
-import Styles from "./Navbar.module.css";
-
+import { usePathname } from "next/navigation";
+import styles from "./Navbar.module.css";
 function NavBar() {
+  const pathname = usePathname();
+  const navItems = [
+    { name: "Home", href: "/" },
+    { name: "Projects", href: "/Projects" },
+    { name: "Qualifications", href: "/Qualifications" },
+    { name: "About Me", href: "/about" },
+  ];
   return (
-    <nav className={Styles.nav}>
-      <ul className={Styles.navList}>
-        <li>
-          <Link href="/" className={Styles.navItem}>
-            Home
-          </Link>
-        </li>
-        {/* <li>
-          <Link href="/about" className={Styles.navItem}>
-            More About Me
-          </Link>
-        </li> */}
-        {/* <li>
-          <Link href="/contact" className={Styles.navItem}>
-            Contact
-          </Link>
-        </li> */}
-        <li>
-          <Link href="/projects" className={Styles.navItem}>
-            My Favourite Projects
-          </Link>
-        </li>
-        <li>
-          <Link href="/certificates" className={Styles.navItem}>
-            Certificates
-          </Link>
-        </li>
-      </ul>
-    </nav>
+    <div className={styles.nav}>
+      <div className={styles.navList}>
+        {navItems.map((item) => (
+          <div
+            key={item.href}
+            className={pathname === item.href ? styles.active : ""}
+          >
+            <Link href={item.href} className={styles.navItem}>
+              {item.name}
+            </Link>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 }
-
 export default NavBar;
