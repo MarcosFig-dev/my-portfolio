@@ -59,3 +59,25 @@
 .techIcons img:hover {
   transform: scale(1.5) rotate(0deg);
 }
+
+.btnDiv {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  transition: all 0.3s ease;
+  width: 100px;
+  height: 40px;
+  border-radius: 8px;
+}
+.button:hover {
+  box-shadow: 0 0 10px #a7caf1; /* blue glow */
+  background: rgb(167, 202, 241);
+  color: #1a1a1a;
+  transform: translateY(-2px);
+  border: 2px solid rgb(167, 202, 241);
+}

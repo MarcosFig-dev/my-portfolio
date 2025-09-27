@@ -1,6 +1,6 @@
 .nav {
   width: 100%;
-  background-color: #1e2a38;
+  background-color: #1a1a1a;
   padding: 1rem 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   top: 0;
@@ -29,8 +29,8 @@
 }
 
 .navItem:hover {
-  background-color: #4a90e2;
-  color: #ffffff;
+  background-color: #a7caf1;
+  color: #1a1a1a;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }

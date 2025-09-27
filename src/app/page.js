@@ -9,7 +9,7 @@ import EduCard from "@/components/landingComps/EduCard/EduCard";
 import SchoolIcon from "@/assets/school.svg";
 import CodingIcon from "@/assets/codingIcon.svg";
 import ProjectCards from "@/components/ProjectCards/ProjectCard";
-import GoBearImg from "@/assets/GoBearImg.png";
+import GoBearImg from "@/assets/GoBearProject.png";
 import jsIcon from "@/assets/jsIcon.svg";
 import reactIcon from "@/assets/reactIcon.svg";
 import htmlIcon from "@/assets/htmlIcon.svg";
@@ -106,6 +106,8 @@ function LandingPage() {
               title="AUT Capstone Project"
               desc="As part of a six-person development team, I contributed to designing and building the Career Task Teams feature for an external company supporting grassroots job seekers and students. Serving as Scrum Master, I facilitated Agile ceremonies and coordinated sprint planning. On the development side, I implemented full-stack features using React, JSX, and Firebase, creating a collaborative, gamified task-management system aimed at improving career outcomes."
               techImg={[reactIcon, jsIcon, htmlIcon, cssIcon, firebaseIcon]}
+              projectLink="https://future-forge-project.vercel.app/"
+              codeLink="https://github.com/sophiaullrich/FutureForgeProject"
             />
           </div>
         </div>

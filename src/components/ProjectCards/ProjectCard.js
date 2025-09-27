@@ -1,7 +1,16 @@
 import Styles from "./ProjectCard.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
-function ProjectCard({ imgSrc, imgAlt, title, desc, techImg }) {
+function ProjectCard({
+  imgSrc,
+  imgAlt,
+  title,
+  desc,
+  techImg,
+  projectLink,
+  codeLink,
+}) {
   return (
     <div className={Styles.card}>
       <Image
@@ -20,6 +29,14 @@ function ProjectCard({ imgSrc, imgAlt, title, desc, techImg }) {
             style={{ "--i": index / techImg.length }}
           />
         ))}
+      </div>
+      <div className={Styles.btnDiv}>
+        <Link href={projectLink} className={Styles.link} target="_blank">
+          <button className={Styles.button}>View Live Project</button>
+        </Link>
+        <Link href={codeLink} className={Styles.link} target="_blank">
+          <button className={Styles.button}>View Code</button>
+        </Link>
       </div>
     </div>
   );
