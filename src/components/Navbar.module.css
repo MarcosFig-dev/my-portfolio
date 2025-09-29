@@ -1,56 +1,101 @@
 .nav {
-  width: 100%;
-  background-color: #1a1a1a;
-  padding: 1rem 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
   top: 0;
-  z-index: 100;
-}
-
-.navList {
-  list-style: none;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 7vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  z-index: 1000;
+  background-color: #1a1a1a;
+  box-sizing: border-box;
+}
+.navList {
+  display: flex;
+  width: 100%;
+  height: 100%;
   justify-content: space-around;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
+  align-items: center;
   flex-wrap: wrap;
 }
-
+.navList > div {
+  flex: 1 1 auto;
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  position: relative;
+  min-width: 100px;
+}
 .navItem {
-  display: block;
-  padding: 0.5rem 1rem;
+  color: #b7a993;
   text-decoration: none;
-  font-family: "Inter", "Helvetica", "Arial", sans-serif;
-  font-weight: 500;
-  color: #ffffff;
-  border-radius: 8px;
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 0.25rem 0.5rem;
+  transition: all 0.3s ease;
+}
+.active {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: all 0.3s ease;
+}
+.navList > div:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   transition: all 0.3s ease;
 }
 
-.navItem:hover {
-  background-color: #a7caf1;
-  color: #1a1a1a;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+/* Responsive Styling */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .navItem {
+    font-size: 1.3rem;
+  }
 }
 
-/* Responsive adjustments */
+/* Mobile */
 @media (max-width: 768px) {
+  .nav {
+    width: 90%;
+    height: auto;
+    padding: 0.5rem 1rem;
+    flex-direction: column;
+  }
+
   .navList {
-    gap: 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .navList > div {
+    width: 100%;
   }
 
   .navItem {
-    padding: 0.5rem 0.8rem;
-    font-size: 0.95rem;
+    font-size: 1.2rem;
   }
 }
 
+/* Small phones */
 @media (max-width: 480px) {
-  .navList {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.8rem;
+  .navItem {
+    font-size: 1rem;
   }
 }

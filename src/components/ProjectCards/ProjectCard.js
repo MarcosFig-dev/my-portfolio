@@ -31,12 +31,16 @@ function ProjectCard({
         ))}
       </div>
       <div className={Styles.btnDiv}>
-        <Link href={projectLink} className={Styles.link} target="_blank">
-          <button className={Styles.button}>View Live Project</button>
-        </Link>
-        <Link href={codeLink} className={Styles.link} target="_blank">
-          <button className={Styles.button}>View Code</button>
-        </Link>
+        <div className={Styles.button}>
+          <Link href={projectLink} className={Styles.link} target="_blank">
+            View Live Project
+          </Link>
+        </div>
+        <div className={Styles.button}>
+          <Link href={codeLink} className={Styles.link} target="_blank">
+            View Code
+          </Link>
+        </div>
       </div>
     </div>
   );
