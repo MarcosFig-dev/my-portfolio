@@ -2,12 +2,14 @@
   display: flex;
   flex-direction: column;
   border-radius: 20px;
+  align-items: center; /* center cards in container */
 }
 
 .card {
   position: relative;
   height: 170px;
-  width: 350px;
+  width: 350px; /* default for desktop */
+  max-width: 100%; /* ensures card never overflows container */
   background: rgba(255, 255, 255, 0.1);
   display: flex;
   flex-direction: column;
@@ -17,6 +19,7 @@
   transition: all 0.5s ease;
   gap: 1.5rem;
   padding: 1.5rem;
+  box-sizing: border-box; /* ensures padding doesn't break layout */
 }
 
 .card::before {
@@ -66,8 +69,56 @@
   margin: 0;
 }
 
+/* Responsive Styling */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .card {
+    width: 300px;
+    padding: 1.25rem;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .date,
+  .location {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile */
 @media (max-width: 768px) {
   .card {
-    max-width: 100%;
+    width: 90%;
+    padding: 1rem;
+    height: auto;
+  }
+
+  .title {
+    font-size: 0.95rem;
+  }
+
+  .date,
+  .location {
+    font-size: 0.85rem;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 480px) {
+  .card {
+    padding: 0.75rem;
+    gap: 1rem;
+  }
+
+  .title {
+    font-size: 0.9rem;
+  }
+
+  .date,
+  .location {
+    font-size: 0.8rem;
   }
 }

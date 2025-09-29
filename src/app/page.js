@@ -3,6 +3,7 @@ import styles from "./LandingPage.module.css";
 import EduCard from "@/components/landingComps/EduCard/EduCard";
 import ProjCards from "@/components/ProjectCards/ProjectCard";
 import GoBearImg from "@/assets/GoBearProject.png";
+import TTTImg from "@/assets/TicTacToe.png";
 import jsIcon from "@/assets/jsIcon.svg";
 import reactIcon from "@/assets/reactIcon.svg";
 import htmlIcon from "@/assets/htmlIcon.svg";
@@ -84,13 +85,13 @@ function LandingPage() {
               codeLink="https://github.com/sophiaullrich/FutureForgeProject"
             />
             <ProjCards
-              imgSrc={GoBearImg}
-              imgAlt="Aut RnD project screenshot"
-              title="AUT Capstone Project"
-              desc="As part of a six-person development team, I contributed to designing and building the Career Task Teams feature for an external company supporting grassroots job seekers and students. Serving as Scrum Master, I facilitated Agile ceremonies and coordinated sprint planning. On the development side, I implemented full-stack features using React, JSX, and Firebase, creating a collaborative, gamified task-management system aimed at improving career outcomes."
-              techImg={[reactIcon, jsIcon, htmlIcon, cssIcon, firebaseIcon]}
-              projectLink="https://future-forge-project.vercel.app/"
-              codeLink="https://github.com/sophiaullrich/FutureForgeProject"
+              imgSrc={TTTImg}
+              imgAlt="Tic-Tac-Toe Project Image"
+              title="Tic-Tac-Toe"
+              desc="A basic Tic-Tac-Toe game, currently a work in progress. Players can take turns on a simple 3x3 grid."
+              techImg={[reactIcon, jsIcon, htmlIcon, cssIcon]}
+              projectLink="https://marcosfig-dev.github.io/Tic-Tac-Toe/"
+              codeLink="https://github.com/MarcosFig-dev/Tic-Tac-Toe"
             />
           </div>
         </div>

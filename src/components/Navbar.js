@@ -7,8 +7,8 @@ function NavBar() {
   const navItems = [
     { name: "Home", href: "/" },
     { name: "Projects", href: "/Projects" },
-    { name: "Qualifications", href: "/Qualifications" },
-    { name: "About Me", href: "/about" },
+    // { name: "Qualifications", href: "/Qualifications" },
+    // { name: "About Me", href: "/about" },
   ];
   return (
     <div className={styles.nav}>

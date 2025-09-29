@@ -8,19 +8,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: transparent;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   z-index: 1000;
+  background-color: #1a1a1a;
+  box-sizing: border-box;
 }
 .navList {
   display: flex;
   width: 100%;
   height: 100%;
   justify-content: space-around;
-  align-items: stretch;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .navList > div {
+  flex: 1 1 auto;
   width: 25%;
   height: 100%;
   display: flex;
@@ -28,6 +31,7 @@
   align-items: center;
   transition: all 0.3s ease;
   position: relative;
+  min-width: 100px;
 }
 .navItem {
   color: #b7a993;
@@ -35,6 +39,8 @@
   font-family: Copperplate, "Copperplate Gothic Light", fantasy;
   text-align: center;
   font-size: 1.8rem;
+  padding: 0.25rem 0.5rem;
+  transition: all 0.3s ease;
 }
 .active {
   background: rgba(255, 255, 255, 0.1);
@@ -53,4 +59,43 @@
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   transition: all 0.3s ease;
+}
+
+/* Responsive Styling */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .navItem {
+    font-size: 1.3rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .nav {
+    width: 90%;
+    height: auto;
+    padding: 0.5rem 1rem;
+    flex-direction: column;
+  }
+
+  .navList {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .navList > div {
+    width: 100%;
+  }
+
+  .navItem {
+    font-size: 1.2rem;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .navItem {
+    font-size: 1rem;
+  }
 }
