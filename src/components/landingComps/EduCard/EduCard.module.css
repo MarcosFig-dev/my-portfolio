@@ -2,14 +2,14 @@
   display: flex;
   flex-direction: column;
   border-radius: 20px;
-  align-items: center; /* center cards in container */
+  align-items: center;
 }
 
 .card {
   position: relative;
   height: 170px;
-  width: 350px; /* default for desktop */
-  max-width: 100%; /* ensures card never overflows container */
+  width: 350px;
+  max-width: 100%;
   background: rgba(255, 255, 255, 0.1);
   display: flex;
   flex-direction: column;
@@ -19,7 +19,7 @@
   transition: all 0.5s ease;
   gap: 1.5rem;
   padding: 1.5rem;
-  box-sizing: border-box; /* ensures padding doesn't break layout */
+  box-sizing: border-box;
 }
 
 .card::before {
